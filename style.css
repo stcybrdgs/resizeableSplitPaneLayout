@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  border: 1px solid #cbd5e0;
+  height: 100vh;
+  width: 100%;
+}
+
+.left-pane {
+  /* Initial width */
+  width: 200px;
+  background
+}
+
+.right-pane {
+  /* Take the remaining width */
+  flex: 1;
+}
+
+.left-pane,
+.right-pane {
+  padding: 20px;
+  min-width: 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  overflow: hidden;
+}
+
+.resize-bar {
+  background-color: #cbd5e0;
+  cursor: ew-resize;
+  height: 100%;
+  width: 8px;
+  font-size: 0.8em;
+  color: rgb(138, 138, 138);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.resize-bar:hover,
+.resize-bar:active {
+  opacity: 100%;
+}
+
